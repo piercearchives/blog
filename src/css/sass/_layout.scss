@@ -9,6 +9,10 @@ header{
 .flex{
   display: flex;
 }
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
 
 .flex-space-between{
   display: flex;
@@ -56,3 +60,15 @@ a{
   color: $white-light;
   padding:  8px;
 }
+
+.img-profile{
+  width: 56px;
+  height: 56px;
+  background-color: $gray-2;
+  border-radius: 50%;
+}
+
+.container-posts{
+  display: flex;
+}
+

@@ -4,9 +4,8 @@ function App() {
   return (
  <>
       
-      <Article></Article>
-     <Header></Header>
-    
+     <Header />
+      <Article />
  </>
    
   );

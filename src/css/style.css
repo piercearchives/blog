@@ -670,6 +670,11 @@ header {
   display: flex;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-space-between {
   display: flex;
   justify-content: space-between;
@@ -713,6 +718,17 @@ a {
   border-radius: 4px;
   color: #FAFCFC;
   padding: 8px;
+}
+
+.img-profile {
+  width: 56px;
+  height: 56px;
+  background-color: #4E4E50;
+  border-radius: 50%;
+}
+
+.container-posts {
+  display: flex;
 }
 
 body {

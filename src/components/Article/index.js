@@ -3,7 +3,14 @@ import Post from '../Post'
 function Article(){
   return(
  <>
- <Post />
+ <section className='container'>
+  <h3>Articles</h3>
+  <div className='mt-3 container-posts'>
+    <Post />
+    <Post />
+    <Post />
+  </div>
+ </section>
  </>
   );
 }
