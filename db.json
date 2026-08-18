@@ -16,59 +16,39 @@
     },
     {
       "id": 2,
-      "id_user": 1,
-      "date": "18 SET 2021",
-      "imageUrl": "https://nyousefali.com.br/blog/img/07.png",
-      "category": "tecnologia",
-      "title": "Novos processadores da 12° geração da intel chegaram.",
-      "resume": "Os novos processadores da intel vieram para bater de frente com os novos Ryzen? Tem nova arquitetura semelhante à prática da grande Apple.",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
-      "duration": "7",
-      "star": "5",
-      "views": "3",
-      "status": true
+      "category": "hardware",
+      "title": "este mouse vai derrotar o gprox",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
     },
     {
       "id": 3,
-      "id_user": 3,
-      "date": "01 NOV 2021",
-      "imageUrl": "https://nyousefali.com.br/blog/img/09.png",
-      "category": "fotografia",
-      "title": "Qual a melhor câmera CxB para fotos e vídeos em 2021?",
-      "resume": "Com o lançamento de novas câmeras, qual a melhor? DSLR ou mirrorless? Qual o melhor custo benefício?",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
-      "duration": "15",
-      "star": "5",
-      "views": "3",
-      "status": true
+      "category": "hardware",
+      "title": "tierlist dos melhorems iem gamers",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
     },
     {
       "id": 4,
-      "id_user": 3,
-      "date": "10 OUT 2021",
-      "imageUrl": "https://nyousefali.com.br/blog/img/03.png",
-      "category": "cinema",
-      "title": "Top 10 Filmes de 2021.",
-      "resume": "Por mais que a pandemia tenha atrapalhado a gravação de vários filmes, temos muitas novidades para esse final de ano. Confira os top 10 filmes que prometem para o final de 2021.",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
-      "duration": "8",
-      "star": "4",
-      "views": "3",
-      "status": true
+      "category": "hardware",
+      "title": "guia de pegadas de mouse para testar",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
     },
     {
       "id": 5,
-      "id_user": 2,
-      "date": "07 OUT 2021",
-      "imageUrl": "https://nyousefali.com.br/blog/img/01.png",
-      "category": "tecnologia",
-      "title": "Novos Mackbooks em 2021.",
-      "resume": "FINALMENTE! Os novos macbooks são lançados pela Apple com novos processadores e o termo PRO volta a fazer sentido! Os resultados são de supreender.",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
-      "duration": "8",
-      "star": "5",
-      "views": "3",
-      "status": true
+      "category": "hardware",
+      "title": "melhores locais do brasil para se morar e habitar seu setup gamer",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
     },
     {
       "id": 6,
@@ -81,20 +61,6 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
       "duration": "8",
       "star": "3",
-      "views": "3",
-      "status": true
-    },
-    {
-      "id": 7,
-      "id_user": 1,
-      "date": "07 NOV 2021",
-      "imageUrl": "https://nyousefali.com.br/blog/img/05.png",
-      "category": "tecnologia",
-      "title": "Ainda vale a pena o PS4 Pro em 2021?",
-      "resume": "Com o lançamento dos novos consoles da Sony, ainda vale a pena o PS4 Pro. Os jogos já estão otimizados para a nova geração?",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
-      "duration": "8",
-      "star": "4",
       "views": "3",
       "status": true
     },
@@ -113,18 +79,49 @@
       "status": true
     },
     {
-      "id_user": 1,
-      "date": "2021-11-29",
-      "imageUrl": "https://nyousefali.com.br/blog/img/08.png",
-      "category": "cinema",
-      "title": "O novo filme do Spider-man no way home",
-      "resume": "Aqui é um resumo do posto: O novo filme do Spider-man no way home",
-      "content": "Conteúdo do post do spiderman\n",
-      "duration": "7",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 9
+      "id": 9,
+      "category": "hardware",
+      "title": "o melhor mouse do mundo!",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
+    },
+    {
+      "id": 10,
+      "category": "hardware",
+      "title": "o melhor mouse do mundo!",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
+    },
+    {
+      "id": 11,
+      "category": "hardware",
+      "title": "este mouse vai derrotar o gprox",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
+    },
+    {
+      "id": 12,
+      "category": "hardware",
+      "title": "este mouse vai derrotar o gprox",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
+    },
+    {
+      "id": 13,
+      "category": "hardware",
+      "title": "este mouse vai derrotar o gprox",
+      "resume": "lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "author": "pierce",
+      "date": "Aug 4, 2020"
     }
   ],
   "user": [
