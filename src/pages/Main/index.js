@@ -19,7 +19,7 @@ useEffect(() => {
 return (
   <>
   <section className='container'>
-   <h2>Articles</h2>
+   <h2>Página principal</h2>
   <div className='mt-5 container-posts'>
     {
       post.map(post => {
