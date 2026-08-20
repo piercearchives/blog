@@ -55,6 +55,12 @@ useEffect(() => {
 
     <button type='button' onClick={AdicionarItem}>adicionar</button>
 
+
+{
+  tarefas.length > 0 && (
+    <h2>Você tem {tarefas.length} tarefas!</h2>
+  ) 
+}
 </div>
 
  </>
