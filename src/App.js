@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Routes from './routes'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 function App() {
 const [tarefas, setTarefas] = useState(() => {
@@ -11,10 +11,13 @@ const [tarefas, setTarefas] = useState(() => {
 
 const [campo, setCampo] = useState('')
 
-function AdicionarItem(){
-  setTarefas([...tarefas, campo]);
-  setCampo('');
-}
+const AdicionarItem = useCallback(() => {
+    setTarefas([...tarefas, campo])
+    setCampo('');
+}, [tarefas, campo]);
+
+  
+
 
 function handlecampo(e){
 setCampo(e.target.value);
