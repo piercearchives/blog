@@ -38,9 +38,22 @@ body{
 
 button{
   padding: 8px;
-  background-color: $white-normal;
+  background-color: #222;
+  color: #f5f5f5;
   border: 0;
   border-radius: 4px;
 }
 
 
+input{
+  padding: 8px;
+  background-color: #222;
+  margin-right: 4px ;
+  border: none;
+  border-radius: 4px;
+  color: #f5f5f5;
+}
+
+li{
+  color: #f5f5f5;
+}
