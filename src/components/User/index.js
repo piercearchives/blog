@@ -1,14 +1,19 @@
+import { useContext } from "react";
+import { UserContext } from "../../contexts/user";
 
+const User = () => {
+  const { username, alterarUsername } = useContext(UserContext);
 
-const User = (props) => {
-return (
-<div>
-  <h1>Meu username é: {props.username}</h1>
-  <br />
-  <button onClick={() => {props.alterarUsername('@pierce')}}>switch</button>
-  <br/>
-</div>
-)
-}
+  return (
+    <div>
+      <h1>Meu username e: {username}</h1>
+      <br />
+      <button type="button" onClick={() => alterarUsername("@pierce")}>
+        Trocar username
+      </button>
+      <br />
+    </div>
+  );
+};
 
 export default User;

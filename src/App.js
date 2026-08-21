@@ -3,7 +3,6 @@ import Routes from './routes'
 import { useEffect, useState, useCallback } from 'react';
 import User from './components/User'
 
-
 function App() {
 const [tarefas, setTarefas] = useState(() => {
   const tarefasSalvas = localStorage.getItem('Array de tarefas');
@@ -17,9 +16,6 @@ const AdicionarItem = useCallback(() => {
     setTarefas([...tarefas, campo])
     setCampo('');
 }, [tarefas, campo]);
-
-const [username, setUsername] = useState('joao');
-
 
 // funciona como um componentDidMount
 // useEffect(() => {
@@ -36,10 +32,9 @@ useEffect(() => {
 }, [tarefas])
   return (
  <>
-      
      <Header />
     <Routes />
-    <User username={username} alterarUsername={setUsername}/>
+    <User/>
    
 
       
