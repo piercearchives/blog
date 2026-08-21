@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Routes from './routes'
 import { useEffect, useState, useCallback } from 'react';
+import User from './components/User'
+
 
 function App() {
 const [tarefas, setTarefas] = useState(() => {
@@ -16,13 +18,9 @@ const AdicionarItem = useCallback(() => {
     setCampo('');
 }, [tarefas, campo]);
 
-  
+const [username, setUsername] = useState('joao');
 
 
-function handlecampo(e){
-setCampo(e.target.value);
-
-}
 // funciona como um componentDidMount
 // useEffect(() => {
 // const tarefasStorage = localStorage.getItem('Array de tarefas');
@@ -41,6 +39,10 @@ useEffect(() => {
       
      <Header />
     <Routes />
+    <User username={username} alterarUsername={setUsername}/>
+   
+
+      
 <div>
   <h1>Olá, vamos falar sobre useState</h1> <br/>
 
