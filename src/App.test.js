@@ -3,6 +3,8 @@ import App from './App';
 
 test('renders the blog box', () => {
   render(<App />);
-  const boxElement = document.querySelector('.box');
+  const boxElement = screen.getByRole('region', {
+    name: /area principal do blog/i,
+  });
   expect(boxElement).toBeInTheDocument();
 });
