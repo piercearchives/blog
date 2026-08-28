@@ -543,6 +543,10 @@
   background-color: rgba(27, 105, 210, 0.2);
 }
 
+.border {
+  border: 1px solid red;
+}
+
 .h0 {
   font-family: "Rubik", sans-serif;
   font-size: 120px;
@@ -971,7 +975,7 @@ input, select, option, textarea {
   cursor: pointer;
   height: 48px;
   width: 56px;
-  background-image: url("../../svg/icon-search.svg");
+  background-image: url("../../../public/svg/icon-search.svg");
   background-repeat: no-repeat;
   background-position: center center;
   transform: translate3d(-8px, 0, 0);
