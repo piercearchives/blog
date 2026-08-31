@@ -178,6 +178,11 @@ $gutter: 32px;
   align-items: center;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+}
+
 .flex-center-column {
   display: flex;
   justify-content: center;
