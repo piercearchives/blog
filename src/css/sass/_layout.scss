@@ -10,47 +10,32 @@ $gutter: 32px;
 
 // Mixin of media-queries
 @mixin responsive($device) {
-
-
   @if $device == xl {
     // For resolutions upper 1440px
     @media screen and (min-width: $container-xl) {
       @content;
     }
-  } 
-
-  @else if $device == ul {
+  } @else if $device == ul {
     // For resolutions upper 960px
     @media screen and (min-width: $container-m) {
       @content;
     }
-  } 
-  
-  @else if $device == l {
+  } @else if $device == l {
     // For resolutions between 1140px and 1440px
     @media screen and (max-width: $container-xl) and (min-width: $container-l) {
       @content;
     }
-  } 
-  
-  
-  @else if $device == m {
+  } @else if $device == m {
     // For resolutions between 960px and 1140px
     @media screen and (max-width: $container-l) and (min-width: $container-s) {
       @content;
     }
-  } 
-  
-  
-  @else if $device == s {
+  } @else if $device == s {
     // For resolutions less than 960px
     @media screen and (max-width: $container-m) {
       @content;
     }
-  } 
-  
-  
-  @else if $device == xs {
+  } @else if $device == xs {
     // For resolutions less than 340px
     @media screen and (max-width: $container-xs) {
       @content;
@@ -58,38 +43,34 @@ $gutter: 32px;
   }
 }
 
-
-@function grid($col, $total: 12){
+@function grid($col, $total: 12) {
   @return ($col / $total) * 100%;
 }
 
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter / 2;
 
-@for $i from 1 through 12{
-  .grid-#{$i}{
-      width: calc(#{grid($i)} - #{$gutter});
-      margin: $gutter / 2;
+    padding: 16px 0px;
+    float: left;
 
-      padding: 16px 0px;
-      float: left;
-
-      @include responsive(s){
-          width: calc(100% - #{$gutter});
-          float: none;
-      }
+    @include responsive(s) {
+      width: calc(100% - #{$gutter});
+      float: none;
+    }
   }
 }
 
-@for $i from 1 through 12{
-  .grid-nobreak-#{$i}{
-      width: calc(#{grid($i)} - #{$gutter});
-      margin: $gutter / 2;
+@for $i from 1 through 12 {
+  .grid-nobreak-#{$i} {
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter / 2;
 
-      padding: 16px 0px;
-      float: left;
+    padding: 16px 0px;
+    float: left;
   }
 }
-
-
 
 .container {
   max-width: $container-l;
@@ -105,8 +86,8 @@ $gutter: 32px;
   //position: sticky;
 
   // clearfix
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: table;
     clear: both;
   }
@@ -118,34 +99,32 @@ $gutter: 32px;
   }
 }
 
-.hero{
+.hero {
   height: 70vh;
 }
 
-.disappear{
-  @include responsive(s){
+.disappear {
+  @include responsive(s) {
     display: none;
   }
 }
 
-
-.row{
+.row {
   // clearfix
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: table;
     clear: both;
   }
 }
 
-.h-100{
+.h-100 {
   height: 100vh;
 }
 
-.h-100p{
+.h-100p {
   height: 100%;
 }
-
 
 .flex {
   display: flex;
@@ -156,14 +135,12 @@ $gutter: 32px;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-
 }
 .flex-end-row {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-
 }
 .flex-start-column {
   display: flex;
@@ -178,7 +155,7 @@ $gutter: 32px;
   align-items: center;
 }
 
-.center{
+.center {
   display: flex;
   justify-content: center;
 }
@@ -190,14 +167,13 @@ $gutter: 32px;
   flex-direction: column;
 }
 
-
 .flex-space {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 
-  @include responsive(s){
+  @include responsive(s) {
     //flex-direction: column;
     //align-items: flex-start;
   }
@@ -206,7 +182,6 @@ $gutter: 32px;
 .flex-column {
   flex-direction: column;
 }
-
 
 .relative {
   position: relative;
@@ -260,92 +235,87 @@ $gutter: 32px;
   width: 25%;
 }
 
-
-.bb-black{
+.bb-black {
   border-bottom: 1px solid $black-light;
 }
 
-.bt-black{
+.bt-black {
   border-top: 1px solid $black-light;
 }
 
-.bl-black{
+.bl-black {
   border-left: 1px solid $black-light;
 }
 
-.br-black{
+.br-black {
   border-right: 1px solid $black-light;
 }
 
-
-.bg-gray{
+.bg-gray {
   background-color: $black-normal;
 }
 
-.bb-gray{
+.bb-gray {
   border-bottom: 2px solid $black-normal;
 }
 
-.bt-gray{
+.bt-gray {
   border-top: 2px solid $black-normal;
 }
 
-.bl-gray{
+.bl-gray {
   border-left: 2px solid $black-normal;
 }
 
-.br-gray{
+.br-gray {
   border-right: 2px solid $black-normal;
 }
 
-
-.profile{
+.profile {
   width: 48px;
   height: 48px;
 
   border-radius: 50%;
 }
 
-.profile-big{
+.profile-big {
   width: 128px;
   height: 128px;
 
   border-radius: 50%;
 }
 
-.profile-img{
+.profile-img {
   border-radius: 50%;
   border: 2px solid $primary-normal;
 }
 
-.card{
+.card {
   border: 1px solid $black-light;
   border-radius: 4px;
   background-color: rgba(15, 20, 31, 0);
 
-  transition: .2s ease;
+  transition: 0.2s ease;
 
-  &:hover{
+  &:hover {
     background-color: rgba(15, 20, 31, 0.2);
   }
 }
 
-.thumb{
-
-  img{
+.thumb {
+  img {
     transform: scale(1.05);
-    transition: .5s ease;
-    
+    transition: 0.5s ease;
   }
-  
-  &:hover{
-    img{
+
+  &:hover {
+    img {
       transform: scale(1.1);
     }
   }
 }
 
-.img-banner{
+.img-banner {
   width: 100%;
   max-height: 420px;
 
@@ -356,51 +326,51 @@ $gutter: 32px;
   justify-content: center;
   align-items: center;
 
-  img{
+  img {
     object-fit: cover;
-    
-    transition: .7s ease;
+
+    transition: 0.7s ease;
   }
 
-  &:hover{
-    img{
+  &:hover {
+    img {
       transform: scale(1.025);
     }
   }
 }
 
-.bg-section{
+.bg-section {
   background-color: rgba(15, 20, 31, 0.5);
 }
 
-.card-danger{
+.card-danger {
   border: 2px solid $red-normal;
   border-radius: 4px;
 
   background-color: rgba(240, 61, 61, 0.2);
 }
 
-.card-success{
+.card-success {
   border: 2px solid $green-normal;
   border-radius: 4px;
 
   background-color: rgba(11, 176, 123, 0.2);
 }
 
-.card-warning{
+.card-warning {
   border: 2px solid $yellow-normal;
   border-radius: 4px;
 
   background-color: rgba(255, 206, 82, 0.2);
 }
 
-.card-info{
+.card-info {
   border: 2px solid $primary-normal;
   border-radius: 4px;
 
   background-color: rgba(27, 105, 210, 0.2);
 }
 
-.border{
+.border {
   border: 1px solid red;
 }

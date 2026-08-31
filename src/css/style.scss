@@ -1,56 +1,53 @@
 // reset inicial
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import 'sass/colors';
-@import 'sass/layout';
-@import 'sass/typography';
-@import 'sass/buttons';
-@import 'sass/icons';
-@import 'sass/spacing';
-@import 'sass/menu';
+@import "sass/colors";
+@import "sass/layout";
+@import "sass/typography";
+@import "sass/buttons";
+@import "sass/icons";
+@import "sass/spacing";
+@import "sass/menu";
 
 // serve para quandoi criarmos um link interno, sermos direcionados de forma animada, não "seca"
-html{
+html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+  position: relative;
 
-  body{
-    width: 100%;
-    position: relative;
+  background-color: $black-dark;
 
-    background-color: $black-dark;
-    
-
-    // Personaliza a barra de rolagem em navegadores WebKit/Blink,
-    // como Chrome, Edge e Safari.
-    &::-webkit-scrollbar{
-      padding-right: 2px;
-      width: 8px;
-      background: transparent;
-    }
-
-    // Define a parte que se move dentro da barra de rolagem.
-    &::-webkit-scrollbar-thumb{
-      border-radius: 8px;
-      background-color: $black-light;
-    }
+  // Personaliza a barra de rolagem em navegadores WebKit/Blink,
+  // como Chrome, Edge e Safari.
+  &::-webkit-scrollbar {
+    padding-right: 2px;
+    width: 8px;
+    background: transparent;
   }
 
-
-
-  .hidden{
-    overflow: hidden;
+  // Define a parte que se move dentro da barra de rolagem.
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $black-light;
   }
+}
 
-  .relative{
-    position: relative;
-  }
+.hidden {
+  overflow: hidden;
+}
 
-  svg, img{
-    width: 100%;
-  }
+.relative {
+  position: relative;
+}
+
+svg,
+img {
+  width: 100%;
+}
