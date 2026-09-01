@@ -1,27 +1,41 @@
-const Hero = () => {
+// hooks
+import { useState, useEffect } from 'react';
+
+// api
+import api from 'services/api';
+
+const Main = ({ content }) => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    if (content) {
+      api.get('/user/' + content.id_user).then(response => {
+        setUser(response.data);
+      });
+    }
+  }, [content]);
+
+  if (!content || !user) {
+    return null;
+  }
+
   return (
     <>
       <div className="py-4 bb-black">
-        <h6 className="color-gray">01 NOV 2021</h6>
-        <h6 className="uppercase color-primary">FOTOGRAFIA</h6>
+        <h6 className="color-gray">{content.date}</h6>
+        <h6 className="uppercase color-primary">{content.category}</h6>
 
-        <h4>
-          As melhores câmeras custo benefício para uso profissional em 2026.
-        </h4>
-        <p className="mt-1">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. .
-        </p>
+        <h4>{content.title}</h4>
+        <p className="mt-1">{content.resume}</p>
         <div className="flex-start-row mt-3">
           <div className="profile">
-            <img
-              src="/img/profile/jp.jpg"
-              alt="perfil do jp"
-              className="profile-img"
-            />
+            <img src={user.ImageProfile} alt={`Imagem de ${user.name}`} className="profile-img" />
           </div>
           <div className="ml-1">
-            <h6 className="color-primary">Joseph</h6>
-            <h6 className="color-gray">@joslyplit</h6>
+            <h6 className="color-primary">
+              {user.name} {user.surname}
+            </h6>
+            <h6 className="color-gray">@{user.user}</h6>
           </div>
         </div>
       </div>
@@ -29,4 +43,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Main;

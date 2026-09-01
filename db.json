@@ -1,0 +1,110 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "id_user": 1,
+      "date": "02 AGO 2026",
+      "imageUrl": "https://res.cloudinary.com/ri8rr576/image/upload/v1788254924/macbook.png",
+      "category": "tecnologia",
+      "title": "Quais são as vantagens de ter um MacBook?",
+      "resume": "Os novos MacBooks chegaram com desempenho impressionante. Mas quais são as vantagens reais de ter um?",
+      "content": "Conteúdo completo da publicação...",
+      "duration": "8",
+      "star": "5",
+      "views": "1280",
+      "status": true
+    },
+
+    {
+      "id": 2,
+      "id_user": 2,
+      "date": "01 AGO 2026",
+      "imageUrl": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=1200&q=80",
+      "category": "cinema",
+      "title": "Medo de Salas Vazias: Como The Backrooms Redefiniu o Terror Psicológico",
+      "resume": "Como espaços vazios, liminares e aparentemente comuns se transformaram em uma das maiores tendências do horror contemporâneo.",
+      "content": "Conteúdo completo da publicação...",
+      "duration": "8",
+      "star": "5",
+      "views": "2450",
+      "status": true
+    },
+
+    {
+      "id": 3,
+      "id_user": 2,
+      "date": "30 JUL 2026",
+      "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+      "category": "games",
+      "title": "Os jogos que definiram uma geração",
+      "resume": "Uma viagem pelos jogos que mudaram a indústria e continuam influenciando jogadores até hoje.",
+      "content": "Conteúdo completo da publicação...",
+      "duration": "10",
+      "star": "4",
+      "views": "3100",
+      "status": true
+    },
+
+    {
+      "id": 4,
+      "id_user": 1,
+      "date": "28 JUL 2026",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "category": "tecnologia",
+      "title": "IA como ponte entre devs e designers (sem implodir o processo)",
+      "resume": "Como inteligência artificial pode aproximar designers e desenvolvedores sem substituir o processo criativo.",
+      "content": "Conteúdo completo da publicação...",
+      "duration": "8",
+      "star": "5",
+      "views": "5820",
+      "status": true
+    },
+
+    {
+      "id": 5,
+      "id_user": 1,
+      "date": "25 JUL 2026",
+      "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
+      "category": "tecnologia",
+      "title": "Fim da Otimização Manual no React",
+      "resume": "As novas ferramentas estão mudando a maneira como desenvolvedores pensam sobre performance e otimização.",
+      "content": "Conteúdo completo da publicação...",
+      "duration": "7",
+      "star": "4",
+      "views": "3920",
+      "status": true
+    }
+  ],
+
+  "user": [
+    {
+      "id": 1,
+      "user": "gabs_silva",
+      "name": "Gabriel",
+      "surname": "Silva",
+      "token": "E10ADC3949BA59ABBE56E057F20F883E",
+      "description": "Gabriel Silva is at the forefront of Artificial Intelligence as a Senior Machine Learning Engineer, focusing on the development and optimization of Large Language Models (LLMs) and autonomous agent architectures. In his daily work, he leads projects centered on model alignment, high-performance inference, and the integration of complex agentic workflows in large-scale production environments. He combines a strong foundation in applied research with robust systems engineering to tackle critical challenges in latency, accuracy, and scalability within one of modern technology's most competitive and innovative ecosystems.",
+      "ImageProfile": "https://res.cloudinary.com/ri8rr576/image/upload/v1788255116/cosmos_779245820.jpg"
+    },
+
+    {
+      "id": 2,
+      "user": "biatriz.l",
+      "name": "Beatriz",
+      "surname": "Lima",
+      "token": "E10ADC3949BA59ABBE56E057F20F883E",
+      "description": "Sou UI Designer e apaixonada por tecnologia. Crio interfaces e escrevo para o blog.",
+      "ImageProfile": "https://res.cloudinary.com/ri8rr576/image/upload/v1788255116/cosmos_324657535.jpg"
+    },
+
+    {
+      "id": 3,
+      "user": "alex",
+      "name": "Alex",
+      "surname": "Jacob",
+      "token": "E10ADC3949BA59ABBE56E057F20F883E",
+      "description": "Sou fotógrafo profissional, amante de cinema e tecnologia. Colunista e nas horas vagas escrevo para o blog.",
+      "ImageProfile": "https://nyousefali.com.br/blog/profile/alex.png"
+    }
+  ]
+}
