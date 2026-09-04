@@ -1,5 +1,8 @@
 import blog from "../../../svg/blog.svg";
 
+
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -13,9 +16,9 @@ const Home = () => {
             <p className="mt-1">
               um blog para todos. Escrever. Ler. Comentar. Contribuir. Conectar.
             </p>
-            <a href="#botao" alt="botao" className="btn mt-4">
+            <Link to='/login' alt="botao" className="btn mt-4">
               Começar a escrever
-            </a>
+            </Link>
           </div>
 
           <div className="grid-nobreak-6">

@@ -1,5 +1,8 @@
 import logo from "svg/blog-logo.svg";
 
+// link
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
@@ -7,20 +10,17 @@ const Header = () => {
       <header className="px-2">
         <nav className="menu">
           <div className="logo">
-            <a href="#logo">
+            <Link to="/">
               <img src={logo} alt="Blog" />
-            </a>
+            </Link>
           </div>
 
           <ul className="menu">
             <li>
-              <a href="#categorias">Categorias</a>
+              <Link to='/about'>Sobre</Link>
             </li>
             <li>
-              <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="#contato">Contato</a>
+              <Link to='/contact'>Contato</Link>
             </li>
           </ul>
         </nav>
@@ -37,15 +37,15 @@ const Header = () => {
           </div>
 
           <div className="cta-desktop ml-3">
-            <a href="#login" className="btn">
+            <Link to='/login' className="btn">
               Login
-            </a>
+            </Link>
           </div>
 
           <div className="cta-mobile">
-            <a href="#login" className="link color-primary">
+            <Link to='/login' className="link color-primary">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -55,19 +55,14 @@ const Header = () => {
         <div className="menu-mobile">
           <ul className="nav-mobile">
             <li>
-              <a href="#categorias" className="link-menu-mobile">
-                Categorias
-              </a>
-            </li>
-            <li>
-              <a href="#sobre" className="link-menu-mobile">
+              <Link to='/about' className="link-menu-mobile">
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contato" className="link-menu-mobile">
+              <Link to='/contact' className="link-menu-mobile">
                 Contato
-              </a>
+              </Link>
             </li>
             <li className="py-2 px-2">
               <form className="flex">

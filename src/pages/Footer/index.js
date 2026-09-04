@@ -104,7 +104,7 @@ const Footer = () => {
 
           <div className="footer__bottom">
             <p className="footer__copyright">
-              2022 | Todos os direitos reservados.
+              2026 | Todos os direitos reservados.
             </p>
 
             <div className="footer__socials">

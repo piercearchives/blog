@@ -14,6 +14,12 @@ import api from 'services/api';
 // hooks
 import { useState, useEffect } from 'react';
 
+// header e footer
+import Header from 'pages/Header'
+import Footer from 'pages/Footer'
+
+
+
 const Home = () => {
   // variáveis de estado
   const [main, setMain] = useState([]);
@@ -40,6 +46,10 @@ const Home = () => {
 
   return (
     <>
+
+
+    <Header />
+
       <Hero />
 
       <section className="container">
@@ -87,6 +97,9 @@ const Home = () => {
               return <Banner key={item.id} content={item} />
             })
           }
+
+
+<Footer />
 
     </>
   );

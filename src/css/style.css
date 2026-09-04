@@ -552,6 +552,10 @@
   border: 1px solid red;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 .h0 {
   font-family: "Rubik", sans-serif;
   font-size: 120px;
@@ -936,6 +940,14 @@ b {
     font-weight: 500;
     font-size: 96px;
   }
+}
+
+.color-gray-light {
+  color: #888a8c;
+}
+
+.color-gray-lighter {
+  color: #9ea0a3;
 }
 
 .btn {
