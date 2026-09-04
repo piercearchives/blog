@@ -2,9 +2,7 @@
 import Header from 'pages/Header';
 import Footer from 'pages/Footer';
 
-// images
-import logo from 'img/profile/hp.jpg';
-import banner from 'img/obsession.jpg';
+
 
 // useParams (Hook)
 import { useParams } from 'react-router-dom';

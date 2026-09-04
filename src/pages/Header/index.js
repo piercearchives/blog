@@ -1,9 +1,40 @@
-import logo from "svg/blog-logo.svg";
+import logo from 'svg/blog-logo.svg';
 
 // link
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
+
+// hooks
+import { useState } from 'react';
+import Search from 'pages/Search';
 
 const Header = () => {
+  const initialValueForm = {
+    search: '',
+  };
+
+  // variáveis de estado
+  const [form, setForm] = useState(initialValueForm);
+
+  // useNavigate para redirecionar 
+  const navigate = useNavigate();
+
+  function onChange(event) {
+    // desestruturação do valor e propriedade do campo
+    const { value, name } = event.target;
+
+    // pegando o valor antigo e adicionando o caracter novo
+    setForm({ ...form, [name]: value });
+
+    // console.log(form);
+  }
+
+  function handleSearch(e) {
+    e.preventDefault();
+
+
+    navigate(`/search/${form.search}`)
+  }
+
   return (
     <>
       {/* Header */}
@@ -17,10 +48,10 @@ const Header = () => {
 
           <ul className="menu">
             <li>
-              <Link to='/about'>Sobre</Link>
+              <Link to="/about">Sobre</Link>
             </li>
             <li>
-              <Link to='/contact'>Contato</Link>
+              <Link to="/contact">Contato</Link>
             </li>
           </ul>
         </nav>
@@ -30,20 +61,20 @@ const Header = () => {
 
         <div className="flex-start-row">
           <div className="search">
-            <form className="flex">
-              <input type="text" name="search" placeholder="Buscar..." />
+            <form className="flex" onSubmit={handleSearch}>
+              <input type="text" name="search" placeholder="Buscar..." onChange={onChange} />
               <button type="submit" className="btn-search"></button>
             </form>
           </div>
 
           <div className="cta-desktop ml-3">
-            <Link to='/login' className="btn">
+            <Link to="/login" className="btn">
               Login
             </Link>
           </div>
 
           <div className="cta-mobile">
-            <Link to='/login' className="link color-primary">
+            <Link to="/login" className="link color-primary">
               Login
             </Link>
           </div>
@@ -55,12 +86,12 @@ const Header = () => {
         <div className="menu-mobile">
           <ul className="nav-mobile">
             <li>
-              <Link to='/about' className="link-menu-mobile">
+              <Link to="/about" className="link-menu-mobile">
                 Sobre
               </Link>
             </li>
             <li>
-              <Link to='/contact' className="link-menu-mobile">
+              <Link to="/contact" className="link-menu-mobile">
                 Contato
               </Link>
             </li>

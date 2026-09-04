@@ -39,9 +39,9 @@ const Home = () => {
     });
 
     // posts mais vistos
-    api.get('/posts?_start=2&_limit=5').then(r => {
-      setMostseen(r.data);
-    });
+   api.get('/posts?_sort=views&_order=desc&_limit=3').then(response => {
+  setMostseen(response.data);
+});
   }, []);
 
   return (
@@ -79,7 +79,7 @@ const Home = () => {
           quas modi libero, laboriosam mollitia numquam,
         </p>
 
-        <div className="row">
+        <div className="row cards-list">
 
           {
             mostseen.map((item) => {

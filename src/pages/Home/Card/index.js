@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const Card = ( {content} ) => {
+const Card = ({ content }) => {
   return (
     <>
       <div className="grid-4 card p-0">
@@ -10,14 +10,16 @@ const Card = ( {content} ) => {
           </Link>
         </div>
 
-        <div className="mt-4 px-3 ">
+        <div className="mt-4 px-3 card-body">
           <h6 className="color-gray">{content.date}</h6>
           <h6 className="uppercase color-primary">{content.category}</h6>
 
-          <Link to={'/post/' + content.id}><h4 className="mt-1">{content.title}</h4></Link>
+          <Link to={'/post/' + content.id}>
+            <h4 className="mt-1">{content.title}</h4>
+          </Link>
           <p className="mt-2">{content.resume}</p>
 
-          <div className="mt-3 my-3">
+          <div className="card-action my-3">
             <Link to={'/post/' + content.id} alt="ler mais" className="link color-primary">
               Ler mais
             </Link>
