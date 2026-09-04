@@ -28,12 +28,12 @@ const Home = () => {
     });
 
     // requisição para banner
-    api.get('/posts?_sort=date&_order=desc&_limit=1').then(r => {
+    api.get('/posts?_start=4&_sort=date&_order=desc&_limit=1').then(r => {
       setBanner(r.data);
     });
 
     // posts mais vistos
-    api.get('/posts?_limit=3').then(r => {
+    api.get('/posts?_start=2&_limit=5').then(r => {
       setMostseen(r.data);
     });
   }, []);
@@ -70,13 +70,24 @@ const Home = () => {
         </p>
 
         <div className="row">
-          <Card />
-          <Card />
-          <Card />
+
+          {
+            mostseen.map((item) => {
+              return <Card key={item.id} content={item} />
+            })
+          }
+
+
+
         </div>
       </section>
 
-      <Banner />
+  {
+            banner.map((item) => {
+              return <Banner key={item.id} content={item} />
+            })
+          }
+
     </>
   );
 };
