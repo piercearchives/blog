@@ -67,9 +67,7 @@ const Header = () => {
         <div className="flex-start-row">
           <div className="search">
             <form className="flex" onSubmit={handleSearch} role="search">
-              <label htmlFor="search-header" className="sr-only">
-                Buscar no blog
-              </label>
+           
 
               <input
                 id="search-header"
