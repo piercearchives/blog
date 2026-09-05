@@ -31,7 +31,7 @@ const Login = () => {
               />
 
 
-             <div className="card-danger p-2 my-1">
+             {/* <div className="card-danger p-2 my-1">
                     <h6 className="h7 color-red">Olá, isso é uma mensagem de erro</h6>
                 </div>
 
@@ -45,13 +45,17 @@ const Login = () => {
 
                 <div className="card-info p-2 my-1">
                     <h6 className="h7 color-primary">Olá, isso é uma mensagem de erro</h6>
-                </div>
+                </div> */}
 
 
               <button className="btn w-100 mt-3">Entrar</button>
             </form>
           </div>
           <div className="grid-4 disappear"></div>
+
+
+
+          
         </div>
       </section>
 

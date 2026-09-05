@@ -14,8 +14,9 @@ const Header = () => {
 
   // variáveis de estado
   const [form, setForm] = useState(initialValueForm);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // useNavigate para redirecionar 
+  // useNavigate para redirecionar
   const navigate = useNavigate();
 
   function onChange(event) {
@@ -31,8 +32,7 @@ const Header = () => {
   function handleSearch(e) {
     e.preventDefault();
 
-
-    navigate(`/search/${form.search}`)
+    navigate(`/search/${form.search}`);
   }
 
   return (
@@ -56,14 +56,30 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* burguer menu */}
-        <div className="bx" aria-label="Abrir menu" />
+        {/* burguer menu*/}
+        <button
+          type="button"
+          className={`bx nostyle ${isMenuOpen ? 'active' : ''}`}
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
 
         <div className="flex-start-row">
           <div className="search">
-            <form className="flex" onSubmit={handleSearch}>
-              <input type="text" name="search" placeholder="Buscar..." onChange={onChange} />
-              <button type="submit" className="btn-search"></button>
+            <form className="flex" onSubmit={handleSearch} role="search">
+              <label htmlFor="search-header" className="sr-only">
+                Buscar no blog
+              </label>
+
+              <input
+                id="search-header"
+                type="search"
+                name="search"
+                placeholder="Buscar..."
+                onChange={onChange}
+              />
+
+              <button type="submit" className="btn-search" aria-label="Pesquisar" />
             </form>
           </div>
 
@@ -83,7 +99,7 @@ const Header = () => {
 
       {/* menu mobile */}
       <div className="relative">
-        <div className="menu-mobile">
+        <div className={`menu-mobile ${isMenuOpen ? 'showmenu' : ''}`}>
           <ul className="nav-mobile">
             <li>
               <Link to="/about" className="link-menu-mobile">
